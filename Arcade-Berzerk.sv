@@ -109,7 +109,7 @@ localparam CONF_STR = {
 	"A.BERZERK;;",
 	"H0O1,Aspect Ratio,Original,Wide;",
 	"O35,Scandoubler Fx,None,HQ2x,CRT 25%,CRT 50%,CRT 75%;",
-	"OUV,Serial SNAC DB9M,Off,1 Player,2 Players;",
+	"OUV,Serial SNAC DB9MD,Off,1 Player,2 Players;",
 	"-;",
 	"O89,Bonus Life,None,5000,10000,5000 and 10000;",
 	"OAB,Language,English,German,French,Spanish;",
