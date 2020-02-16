@@ -177,7 +177,7 @@ wire [15:0] joystick_0 = |status[31:30] ? {
 	joydb9md_1[1], // btn_left 	-> L
 	joydb9md_1[0], // btn_right -> R 
 	} 
-	: joystick_0;
+	: joystick_0_USB;
 
 wire [15:0] joystick_1 =  status[31]    ? {
 	joydb9md_2[8] | joydb9md_2[11] | (joydb9md_2[7] & joydb9md_2[6]),// Mode | Z | Start + A -> Coin
