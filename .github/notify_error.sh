@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Copyright (c) 2020 José Manuel Barroso Galindo <theypsilon@gmail.com>
 
-set -xeuo pipefail
+set -euo pipefail
 
 SENDER="jose@josebg.com"
 
@@ -34,8 +34,8 @@ STATUS="${STATUS//$'\n'/<br />}"
 DIFF=$(json_escape "$DIFF")
 STATUS=$(json_escape "$STATUS")
 
-if [ ${#DIFF} -ge 1000 ]; then
-    DIFF=" TOO LONG  "
+if [ ${#DIFF} -ge 2000 ]; then
+    DIFF=" Too long to show...  "
 fi
 
 SUBJECT="Build broken at ${GITHUB_REPOSITORY}@${GITHUB_SHA:0:5}!"
