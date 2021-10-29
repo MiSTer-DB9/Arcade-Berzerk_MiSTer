@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Copyright (c) 2020 José Manuel Barroso Galindo <theypsilon@gmail.com>
 
-set -euo pipefail
+set -xeuo pipefail
 
 SENDER="jose@josebg.com"
 
