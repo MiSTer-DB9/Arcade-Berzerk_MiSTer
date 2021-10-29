@@ -34,6 +34,10 @@ STATUS="${STATUS//$'\n'/<br />}"
 DIFF=$(json_escape "$DIFF")
 STATUS=$(json_escape "$STATUS")
 
+if [ ${#DIFF} -ge 1000 ]; then
+    DIFF=" TOO LONG  "
+fi
+
 SUBJECT="Build broken at ${GITHUB_REPOSITORY}@${GITHUB_SHA:0:5}!"
 MESSAGE="<p>Release build failed!</p> \
 <p>Reason '${REASON}'.</p> \
