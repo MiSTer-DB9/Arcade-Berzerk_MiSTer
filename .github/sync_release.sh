@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Copyright (c) 2020 José Manuel Barroso Galindo <theypsilon@gmail.com>
 
-set -xeuo pipefail
+set -euo pipefail
 
 UPSTREAM_REPO="https://github.com/MiSTer-devel/Arcade-Berzerk_MiSTer.git"
 CORE_NAME="Arcade-Berzerk"
